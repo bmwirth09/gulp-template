@@ -69,13 +69,19 @@ See the [Lo-Dash `_.template` docs](http://lodash.com/docs#template).
 
 Type: `Object`
 
-The data object used to populate the text.
+The data object used to populate the text. Must be null/undefined if you options.returnFunction is true.
 
 #### options
 
 Type: `Object`
 
 [Lo-Dash `_.template` options](http://lodash.com/docs#template).
+
+#### options.returnFunction
+
+Type: `Boolean`
+
+Return the compiled function, rather than html.
 
 
 ## Notes
