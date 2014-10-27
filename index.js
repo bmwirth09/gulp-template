@@ -11,6 +11,7 @@ module.exports = function (data, options) {
 
 	// If undefined is passed in for data to _.template, the compiled function is returned, not html
 	data = (options.returnFunction) ? undefined : data || {};
+	delete options.returnFunction;
 
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
